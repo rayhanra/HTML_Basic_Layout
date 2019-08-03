@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        /*----------------
+        Common Styles
+        -----------------*/
+        *{
+            margin: 0;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        ul, ol, li {
+            list-style: none;
+        }
+        h1 {
+            font-size: 30px;
+        }
+        h2 {
+            font-size: 25px;
+        }
+        .container {
+            width: 100%;
+            height: 400px;
+        }
+        .subdivision {
+            width: 100%;
+            height: 100%;
+            color: #fff;
+        }
+        .clearfix:after {
+            content: "";
+            clear: right;
+            display: table;
+        }
+
+        /*--------------------
+        First, second
+        ------------------*/
+        .first {
+            background: linear-gradient(#2E3192, #1BFFFF);
+            
+        }
+        .second{
+            background: linear-gradient(#D4145A, #FBB03B);
+        }
+
+        /*----------------
+        Responsiveness for tablet
+        -----------------*/
+        @media all and (min-width: 768px) and (max-width: 1159px) {
+            .container {
+                width: 100%;
+                height: 500px;
+            }
+
+            .subdivision {
+                width: 50%;
+                height: 100%;
+                font-family: 'Courier New', Courier, monospace;
+                float: left;
+                color: #fff;
+            }
+
+        }
+        /*----------------
+        Responsiveness for desktop
+        -----------------*/
+        @media all and (min-width: 1159px) and (max-width: 2500px) {
+            .container {
+                width: 100%;
+                height: 200px;
+            }
+            .subdivision {
+                width: 50%;
+                height: 100%;
+                font-family: 'Courier New', Courier, monospace;
+                float: left;
+                color: #fff;
+            }
+
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <section class="container">
+
+        <div class="first clearfix subdivision">
+            <h2>Hello World</h2>
+        </div>
+
+        <div class="second subdivision">
+            <h2>Bangladesh</h2>
+        </div>
+
+    </section>
+
+</body>
+</html>
